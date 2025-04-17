@@ -1,0 +1,233 @@
+body {
+    background-color: rgb(17, 12, 47);
+    margin: 0;
+    padding: 1ex;  
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos hijos */
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+nav, main, footer {
+    margin-top: 1em;
+    background-color: rgb(17, 17, 0);
+    border: 2px solid rgb(255, 255, 255); /* Borde blanco */
+    width: 720px;
+}
+
+main, footer {
+    text-align: justify;
+    padding: 0 1ex;
+}
+
+main{
+    align-content: center;
+    height: 600px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5ex;
+}
+
+
+nav {
+    padding: 1ex;
+}
+
+ul p{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin-left: .5ex; 
+}
+
+h3{
+    margin: 0;
+}
+
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; /* Usa Flexbox para los elementos de la lista */
+    flex-direction: row; /* Alinea los elementos de la lista en una fila */
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+nav li {
+    margin: .5ex;
+    border: 2px solid rgb(255, 255, 255); /* Borde blanco */
+    padding: 0 1em;
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    background-color: rgb(0, 0, 20); /* Color de fondo negro para los ítems de la lista */
+    display: flex;
+    align-items: center; /* Centra el contenido verticalmente dentro del li */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del li */
+    
+}
+nav li a {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    color: rgb(255, 255, 255); /* Color del texto blanco */    
+    display: block; /* Hace que el enlace ocupe todo el área del `li` */
+    padding: 0; /* Quita cualquier padding predeterminado */
+    margin: 0; /* Quita cualquier margen predeterminado */
+}
+nav ul div{
+    display: flex;
+    flex-direction: row;
+}
+#navJuegos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navActivo{
+    background-color: rgb(17,17,57);
+}
+
+
+#aviso_juego_no_disponible{
+    text-align: center;
+}
+
+
+/*ESTILO JUEGO DE CARTAS*/
+#juego_de_cartas{
+    display: flex;
+    flex-flow: row nowrap;   
+    align-items: center;
+    justify-content: space-between;
+}
+#juego_de_cartas div{
+    display: flex;
+    justify-content: center;
+}
+#juego_de_cartas ul{
+    height: 280px;
+    width: 400px;
+    padding-right: 1ex;
+    overflow-y: scroll;/*para que se estire en height con scroll */
+    scrollbar-color: rgb(255, 255, 255) #222;
+    scrollbar-width: thin; 
+}
+
+#columna_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#columna_3{
+    width: 100px;
+}
+
+#espacio_mesa{
+    height: 200px;
+}
+
+#div_tirar{
+    min-height: 1.5em;
+    margin: .3ex;
+}
+.btn_tirar{
+    display: none;
+}
+
+.btn-carta{
+    border-radius: 25px;
+}
+.btn-carta:focus {
+    outline: 2px solid rgb(255, 255, 255); /* Borde blanco cuando el enlace está enfocado */
+    outline-offset: 2px; /* Espacio entre el borde y el enlace */
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-1ex); /*destaco la carta seleccionada levantandola un poco*/
+    transition: transform 0.3s ease; /*tiempo de animacion para levantar*/
+}
+
+.btn-carta:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#apostar{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1ex;
+    padding: 1.5ex;
+    background-color: rgb(12, 12, 0); /* Color de fondo azul */
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    border: 2px solid rgb(255, 255, 255); /* Borde blanco */
+    border-radius: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/* Estilo cuando el enlace está en estado hover */
+nav li:hover {
+    background-color: rgb(27, 27, 87); /* Color de fondo azul oscuro */
+    color: rgb(255, 255, 255); /* Color blanco para el texto */
+}
+
+/* Estilo cuando el enlace está en estado focus */
+nav li:focus {
+    outline: 2px solid rgb(255, 255, 255); /* Borde blanco cuando el enlace está enfocado */
+    outline-offset: 2px; /* Espacio entre el borde y el enlace */
+    background-color: rgb(12, 12, 67); /* Fondo azul oscuro */
+    color: rgb(255, 255, 255); /* Color blanco para el texto */
+}
+
+button {
+    background-color: rgb(12, 12, 0); /* Color de fondo azul */
+    color: rgb(255, 255, 255); /* Color del texto blanco */
+    border: 2px solid rgb(255, 255, 255); /* Borde blanco */
+    margin: 0 1ex;
+    padding: .5ex 1ex;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Efectos al pasar el cursor sobre el botón */
+button:hover {
+    background-color: rgb(12, 12, 67); /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Adaptación del código a un teléfono */
+@media (max-width: 720px) {
+    body{
+        padding: 0 1em;
+    }
+
+    nav, main, footer {
+        margin-top: 1ex;
+        width: 100%; /* Elimina el ancho máximo y ajusta al 100% del ancho disponible */
+    }
+
+    footer{
+        min-height: 5ex;
+        margin-bottom: 1.5ex;
+        margin-top: 1ex;
+
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección de los elementos de la lista a columna */
+        align-items: stretch; /* Ajusta los elementos para ocupar todo el ancho */
+        padding: 0 2ex; /* Ocupa todo el ancho disponible */
+    }
+
+
+
+}
