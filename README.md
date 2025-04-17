@@ -1,2 +1,2 @@
 # juego_de_cartas
-Juego de cartas con POO. Estética pensada en PILTRIP
+Juego de cartas con POO en js. Estética pensada en PILTRIP
