@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Dados Piltrip</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1>Piltrip, juego de cartas y dados</h1>
+            <nav>
+                <ul><!--creo una lista para todas las paginas-->
+                    <li><a href="index.html">Inicio</a></li>
+                    <li> <!--creo una lista para los tres juegos-->
+                        <p><strong>Juegos</strong></p>
+                        <div>
+                            <ul id="navJuegos">
+
+                                <li><a href="juego_de_cartas.html">Cartas</a></li>
+                                <li class="navActivo"><a href="juego_de_dados.html">Dados</a></li>
+                                <li><a href="juegos_otros.html">otro</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="tabla_de_posiciones.html">Tabla de Puntajes</a></li>
+                    <li><a href="desarrollador.html">Desarrollador</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+            <div id="juego_de_dados">
+                <div id="columna_1">
+                    <img src="img/dado/dado_cara1.png" alt="Dado que gira" id="mazo">
+                </div>
+                <div id="columna_2">
+                </div>
+                <div id="columna_3">
+                </div>
+            </div>
+        </main>
+        <footer>
+            <a href="https://www.instagram.com/piltrip/" target="_blank">Piltrip</a>
+        </footer>
+    </div>
+    <script src="js/juego_de_dados.js"></script>
+</body>
+
+</html>
